@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<header>
+<style>
+  #map {
+  	height: 400px;
+  	width: 100%;
+  }
+</style>
+</header>
+<body>
+	<h3>RUMAH PUPUT</h3>
+	<div id="map"></div>
+
+	<script>
+      function initMap() {
+        var rumahku = {lat: 3.340036, lng: 117.573726};
+        var map = new google.maps.Map(document.getElementById('map'), {
+
+          zoom: 14,
+          center: rumahku
+        });
+        var marker = new google.maps.Marker({
+          position: rumahku,
+          map: map
+      });
+    }
+    </script>
+
+ 	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLai9O0nvGrcjvvPC1NXQipUv7hMNsb-s&callback=initMap">
+    </script>
+
+</body>
+</html>
