@@ -31,7 +31,11 @@
 
         // NOTE: This uses cross-domain XHR, and may not work on older browsers.
         map.data.loadGeoJson('https://l200150123.github.io/gorontaloJson.js');
-       
+       map.data.setStyle({
+          strokeColor: 'blue',
+          strokeOpacity: 3,
+          strokeWeight: 3
+        });
         
       }
     </script>
