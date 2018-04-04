@@ -31,16 +31,6 @@
 
         // NOTE: This uses cross-domain XHR, and may not work on older browsers.
         map.data.loadGeoJson('https://l200150123.github.io/gorontaloJson.js');
-        map.data.setStyle({
-          fillColor: 'green',
-          strokeWeight: 3
-        });
-
-        // Set the fill color to red when the feature is clicked.
-        // Stroke weight remains 3.
-        map.data.addListener('click', function(event) {
-           map.data.overrideStyle(event.feature, {fillColor: 'red'});
-        });
        
         
       }
